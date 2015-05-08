@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:summary="Log in information"
+        android:title="Authentication">
+        <EditTextPreference
+            android:key="username"
+            android:summary="Change your username"
+            android:title="Username" />
+        <EditTextPreference
+            android:key="password"
+            android:summary="Change your password"
+            android:title="Password" />
+
+        <CheckBoxPreference
+            android:key="checkBox"
+            android:summary="Persist login sessions"
+            android:title="Keep me logged in" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:summary="Broadcasts Settings"
+        android:title="Broadcasting">
+
+        <ListPreference
+            android:entries="@array/listOptions"
+            android:entryValues="@array/listValues"
+            android:key="listpref"
+            android:summary="Change scanning mode"
+            android:title="List preference" />
+
+        <CheckBoxPreference
+            android:key="onOffPrefs"
+            android:title="Enable Monitoring"
+            android:summary="Allow app to detect beacons"
+            android:textColorHint="#fff" />
+
+        <CheckBoxPreference
+            android:key="onOffPreferredItems"
+            android:summary="Filter displayed items based on preferred items"
+            android:title="Show preferred categories only" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:summary="Network"
+        android:title="Settings">
+
+        <CheckBoxPreference
+            android:key="onOffWifi"
+            android:summary="Connect to wifi to retrieve information when available"
+            android:title="Automatically connect to wifi" />
+
+        <CheckBoxPreference
+            android:key="onOffInternet"
+            android:summary="Connect to internet to retrieve information when available"
+            android:title="Automatically connect to the internet" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="QRCodeItemScan">
+        <attr name="QRCodeImage" format="reference" />
+        <attr name="QRCodeScanTime" format="string" localization="suggested" />
+        <attr name="QRCodeScanLocation" format="string" localization="suggested" />
+    </declare-styleable>
+</resources>

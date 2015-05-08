@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Prism</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="search_title">Search</string>
+    <string name="search_hint">Search items</string>
+
+    <string name="success_login_message">Successfully logged in</string>
+    <string name="error_login_message">Error logging in!</string>
+</resources>

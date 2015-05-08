@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_form"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:id="@+id/login_form_banner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/login_spinner"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ring_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Enter your credentials"
+            android:textColor="#fff"
+            android:textSize="22dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textFilter"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:hint="Username"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:theme="@style/AppTheme" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textFilter"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:hint="Password"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:theme="@style/AppTheme" />
+
+    <ImageView
+        android:id="@+id/login_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/login_button"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

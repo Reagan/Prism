@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/launch_activity_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gradient_bg"
+    android:orientation="vertical"
+    android:weightSum="3"
+    tools:context=".LaunchActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <ToggleButton
+            android:id="@+id/alerts_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/beacon_scanning_toggle"
+            android:layout_gravity="end"
+            android:adjustViewBounds="true"
+            android:minHeight="50dp"
+            android:scaleType="fitStart"
+            android:onClick="onClick"
+            android:textOff=""
+            android:textOn="" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+        />
+
+        <ImageView
+            android:id="@+id/login_button_launch_activity"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:adjustViewBounds="true"
+            android:minHeight="50dp"
+            android:scaleType="fitStart"
+            android:onClick="onClick"
+            android:src="@drawable/lock_icon" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/prism_logo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="0.2"
+        android:src="@drawable/logo" />
+
+    <RelativeLayout
+        android:id="@+id/buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="start"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1.8"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/offers_button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/offer"
+            android:onClick="onClick" />
+
+        <ImageView
+            android:id="@+id/search_button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_toRightOf="@id/offers_button"
+            android:src="@drawable/search" />
+
+        <ImageView
+            android:id="@+id/locate_button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_toRightOf="@id/search_button"
+            android:src="@drawable/move"
+            android:onClick="onClick"/>
+
+        <ImageView
+            android:id="@+id/scan_button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_toRightOf="@id/locate_button"
+            android:src="@drawable/scan"
+            android:onClick="onClick"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

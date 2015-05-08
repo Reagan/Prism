@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="compass_view_circle_bg_color">#97a6a3</color>
+    <color name="compass_view_circle_stroke_color">#fff</color>
+    <color name="left_triangle_base_color">#e1edeb</color>
+    <color name="left_triangle_middle_base_color">#fff</color>
+    <color name="left_triangle_top_base_color">#dd3a38</color>
+    <color name="right_triangle_base_color">#c4cfcd</color>
+    <color name="right_triangle_middle_base_color">#e0e0e0</color>
+    <color name="right_triangle_top_base_color">#c93838</color>
+</resources>

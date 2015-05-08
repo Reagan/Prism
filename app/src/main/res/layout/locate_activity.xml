@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_form"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:id="@+id/directions_activity_banner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/login_spinner"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ring_icon" />
+
+        <TextView
+            android:id="@+id/distance_remaining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/login_spinner"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/turn_instructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/login_spinner"
+            android:layout_below="@+id/distance_remaining"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="22dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_weight="0.7"
+        android:gravity="center"
+        android:layout_height="0dp">
+
+        <prism.re.gan.prism.ui.directions.CompassView
+            android:id="@+id/compass_item"
+            android:layout_width="400dp"
+            android:layout_height="400dp" />
+
+        <prism.re.gan.prism.ui.directions.MapItem
+            android:layout_alignBottom="@+id/compass_item"
+            android:layout_alignRight="@+id/compass_item"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/scanned_codes"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:layout_marginTop="20dp"
+        android:fillViewport="true"
+        android:measureAllChildren="false"
+        android:scrollbars="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/innerLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/sweater_1"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/white_solid_circle"
+                android:layout_gravity="center_horizontal"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/sweater_1"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/white_solid_circle"
+                android:layout_gravity="center_horizontal"/>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/sweater_2"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/white_solid_circle"
+                android:layout_gravity="center_horizontal"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/sweater_3"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/white_solid_circle"
+                android:layout_gravity="center_horizontal"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/sweater_1"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/white_solid_circle"
+                android:layout_gravity="center_horizontal"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/sweater_1"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/white_solid_circle"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>

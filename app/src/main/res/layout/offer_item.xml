@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/placeholder"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/white_solid_circle"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/item_name"
+            android:textColor="#ff0"
+            android:text="Polo Sweaters"
+            android:textSize="24dp"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/item_image"/>
+
+        <LinearLayout
+            android:id="@+id/item_options"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@+id/item_image"
+            android:layout_below="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/buy_icon"
+                android:src="@drawable/cart_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/dislike_icon"
+                android:src="@drawable/plus_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/like_icon"
+                android:src="@drawable/minus_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    <View android:id="@+id/percent_off_cont"
+           android:layout_below="@+id/item_options"
+          android:layout_toRightOf="@+id/item_image"
+          android:layout_width="120dp"
+          android:layout_height="120dp"
+          android:background="@drawable/yellow_circle">
+
+    </View>
+
+    <TextView
+        android:id="@+id/percent_off"
+        android:textColor="#ff0"
+        android:text="25%"
+        android:textSize="48dp"
+        android:layout_alignStart="@+id/percent_off_cont"
+        android:layout_alignBottom="@+id/percent_off_cont"
+        android:layout_alignEnd="@+id/percent_off_cont"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="#ff0"
+        android:text="off"
+        android:textSize="25dp"
+        android:layout_alignStart="@+id/percent_off_cont"
+        android:layout_alignBottom="@+id/percent_off_cont"
+        android:layout_alignEnd="@+id/percent_off_cont"
+        android:layout_marginLeft="44dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

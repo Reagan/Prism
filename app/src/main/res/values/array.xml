@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="listOptions">
+        <item>Continous Scan</item>
+        <item>Low Latency Scan</item>
+        <item>Low Power Scan</item>
+    </string-array>
+
+    <string-array name="listValues">
+        <item>Continous scan</item>
+        <item>Low latency scan</item>
+        <item>Low power scan</item>
+    </string-array>
+</resources>
